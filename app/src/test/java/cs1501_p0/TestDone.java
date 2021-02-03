@@ -17,7 +17,7 @@ public class TestDone {
 		Done.main(null);
 
 		// assertion
-		assertEquals("DONE", bos.toString().trim(), "Does not output DONE");
+		assertEquals("DONE\r\n", bos.toString().trim(), "Does not output DONE");
 
 		// undo the binding in System
 		System.setOut(originalOut);
