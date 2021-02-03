@@ -3,7 +3,6 @@ package cs1501_p0;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import java.io.*;
 
 public class TestDone {
 
@@ -17,7 +16,7 @@ public class TestDone {
 		Done.main(null);
 
 		// assertion
-		assertEquals("DONE\n", bos.toString(), "Does not output DONE");
+		assertEquals("DONE", bos.toString().trim(), "Does not output DONE");
 
 		// undo the binding in System
 		System.setOut(originalOut);
